@@ -1,6 +1,6 @@
-# EssentialsNK
-Essentials plugin for Nukkit
+Essentials - KC Extended
+--
+A plugin **made by Kingdoms Crusade, made for Kingdoms Crusade**. 
+Contributions are welcomed!
 
-Contributions are welcome!
-
-__[Download Page](https://nukkitx.com/resources/essentialsnk.15/)__
+Made with 💕 by Lil.
