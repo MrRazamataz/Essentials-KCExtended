@@ -9,6 +9,7 @@ import cn.nukkit.utils.TextFormat;
 import cn.yescallop.essentialsnk.EssentialsAPI;
 import cn.yescallop.essentialsnk.Language;
 import cn.yescallop.essentialsnk.command.CommandBase;
+import cn.yescallop.essentialsnk.TPChanneling;
 
 public class HomeCommand extends CommandBase {
 
@@ -49,8 +50,13 @@ public class HomeCommand extends CommandBase {
             sender.sendMessage(TextFormat.RED + Language.translate("commands.home.notexists", args[0]));
             return false;
         }
-        player.teleport(home);
-        sender.sendMessage(Language.translate("commands.home.success", args[0]));
-        return true;
+        if (TPChanneling == true){
+            player.teleport(home);
+            sender.sendMessage(Language.translate("commands.home.success", args[0]));
+            return true;
+        } else{
+            sender.sendMessage(TextFormat.RED + Language.translate("commands.home.unsuccess", args[0]));
+            return false
+        }
     }
 }
